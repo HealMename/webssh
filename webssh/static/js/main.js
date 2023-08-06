@@ -360,7 +360,7 @@ jQuery(function($){
 
     var ws_url = window.location.href.split(/\?|#/, 1)[0].replace('http', 'ws'),
         join = (ws_url[ws_url.length-1] === '/' ? '' : '/'),
-        url = 'https://www.ittest008.com/wsshws?id=' + msg.id,
+        url = 'wss://www.ittest008.com/wsshws?id=' + msg.id,
         sock = new window.WebSocket(url),
         encoding = 'utf-8',
         decoder = window.TextDecoder ? new window.TextDecoder(encoding) : encoding,
